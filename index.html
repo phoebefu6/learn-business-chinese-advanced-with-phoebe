@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions on business Chinese for people who already speak it day to day: register, formal emails and WeChat, presenting numbers, negotiation and face, and business dining, with a formality checker that scores a draft against the channel it is going to. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Business Chinese Advanced with Phoebe">
+<meta property="og:description" content="One message written five ways, scored against three channels: each draft fits one, and polishing everything into classical phrasing fits none.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-business-chinese-advanced-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-business-chinese-advanced-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Business Chinese Advanced with Phoebe">
+<meta name="twitter:description" content="One message written five ways, scored against three channels: each draft fits one, and polishing everything into classical phrasing fits none.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-business-chinese-advanced-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Business Chinese Advanced with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(var(--shadow-rgb),.16); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,var(--indigo-50)); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--clay); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+  .siblings { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .8rem; margin-top: 1rem; }
+  .sibling { border: 1px solid var(--hairline); border-radius: 12px; padding: .9rem 1rem; background: #fff; text-decoration: none; color: var(--ink); font-size: .86rem; }
+  .sibling b { display: block; font-size: .92rem; margin-bottom: .2rem; }
+  .sibling span { color: var(--muted); }
+  .sibling.here { border-color: var(--indigo); background: var(--indigo-50); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Communications</div>
+    <h1>Learn <span class="accent">Business Chinese</span> Advanced with Phoebe</h1>
+    <p class="sub">A message that is perfectly polite in an email is stiff on WeChat, and a word-for-word translation of polite English is too casual for both. Six sessions for people who already speak everyday Chinese and need it to work in business: register as a choice made per channel, the shape of a formal email and a business WeChat, presenting numbers with 同比 (tóngbǐ, year on year) and 环比 (huánbǐ, period on period), negotiation and face, and business dining. Every Chinese word on every page carries its pinyin and English. A formality checker in your browser finds the casual, formal and over-formal words in a draft and scores it against the band its channel expects.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="43">43</b><span>markers in the checker</span></div>
+      <div class="stat"><b data-count="3">3</b><span>channels, three bands</span></div>
+      <div class="stat"><b data-count="5">5</b><span>drafts on the bench</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🎯</h2>
+      <p class="plede">The running case is <strong>Lumen Logistics</strong>, an invented Singapore freight company, 鲁门物流 (Lǔmén Wùliú, Lumen Logistics), opening a partnership with a Shanghai distributor. You are the person they send.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-register.html" style="--diff:#FBBF24">
+        <span class="cicon">🎚️</span>
+        <span class="cnum">Session 1 · core</span>
+        <h3>Register: the same sentence, three ways</h3>
+        <p>Person, question form and company: the three levers that move a sentence from a colleague chat to a formal email, and written language versus speech.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-formal-emails-and-wechat.html" style="--diff:#FBBF24">
+        <span class="cicon">✉️</span>
+        <span class="cnum">Session 2 · core</span>
+        <h3>Formal emails and WeChat</h3>
+        <p>The blocks of a formal email, the shape of a business WeChat, subject lines, and why 此致 敬礼 (cǐzhì jìnglǐ, with respect) is a convention and not a standard.</p>
+        <span class="meta"></span>
+      </a>
+      <a class="course-card" href="courses/03-the-formality-checker.html" style="--diff:#F87171">
+        <span class="cicon">🎛️</span>
+        <span class="cnum">Session 3 · bench night</span>
+        <h3>The formality checker</h3>
+        <p>One message written five ways, scored against three channels. Each draft fits one; three swaps fix a literal translation; polishing everything overshoots even email.</p>
+        <span class="meta"><span class="pill amber">★ the bench</span></span>
+      </a>
+      <a class="course-card" href="courses/04-presenting-numbers.html" style="--diff:#FB923C">
+        <span class="cicon">📊</span>
+        <span class="cnum">Session 4 · advanced</span>
+        <h3>Presenting numbers</h3>
+        <p>同比 (tóngbǐ, year on year) and 环比 (huánbǐ, period on period) as the statistics bureau defines them, growth, decline and share, and a result always said with its comparison.</p>
+        <span class="meta"></span>
+      </a>
+      <a class="course-card" href="courses/05-negotiation-and-face.html" style="--diff:#FB923C">
+        <span class="cicon">⚖️</span>
+        <span class="cnum">Session 5 · advanced</span>
+        <h3>Negotiation and face</h3>
+        <p>Face as Graham and Lam describe it, reading an indirect no, and trading concessions toward a clear next step.</p>
+        <span class="meta"></span>
+      </a>
+      <a class="course-card" href="courses/06-dining-and-capstone.html" style="--diff:#FB923C">
+        <span class="cicon">🥂</span>
+        <span class="cnum">Session 6 · capstone</span>
+        <h3>Business dining, and the capstone</h3>
+        <p>Seating, toasts and polite refusal, then the full negotiation and both follow-ups, checked. Final scorecard.</p>
+        <span class="meta"><span class="pill amber">🔒 final scorecard</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#FBBF24"></i>core</span>
+      <span><i style="background:#FB923C"></i>advanced</span>
+      <span><i style="background:#F87171"></i>bench night</span>
+      <span><i style="background:#FB923C"></i>capstone</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="not-this">
+      <h3>What this is not, so you land in the right place 🧭</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>I am starting from zero</td><td><a href="https://phoebefu6.github.io/learn-business-chinese-basic-with-phoebe/">Business Chinese Basic ↗</a></td></tr>
+        <tr><td>I want to present and influence in English</td><td><a href="https://phoebefu6.github.io/learn-communication-with-phoebe/">Communication ↗</a></td></tr>
+        <tr><td><strong>I speak everyday Chinese and need it to work in emails, meetings and negotiations.</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three ways through the same six sessions.</p>
+      <div class="path"><b>✉️ My emails sound wrong</b>
+        <a class="pstep" href="courses/01-register.html">1</a><span class="parr">→</span><a class="pstep" href="courses/02-formal-emails-and-wechat.html">2</a><span class="parr">→</span><a class="pstep" href="courses/03-the-formality-checker.html">3</a>
+        <span style="font-size:.82rem;color:var(--muted)">register, the shape of each channel, the checker on your own drafts</span>
+      </div>
+      <div class="path"><b>🤝 I have a negotiation coming</b>
+        <a class="pstep" href="courses/03-the-formality-checker.html">3</a><span class="parr">→</span><a class="pstep" href="courses/05-negotiation-and-face.html">5</a><span class="parr">→</span><a class="pstep" href="courses/06-dining-and-capstone.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">the checker, face and the indirect no, the capstone</span>
+      </div>
+      <div class="path"><b>🎯 The whole course</b>
+        <a class="pstep" href="courses/01-register.html">1</a><span class="parr">→</span><a class="pstep" href="courses/02-formal-emails-and-wechat.html">2</a><span class="parr">→</span><a class="pstep" href="courses/03-the-formality-checker.html">3</a><span class="parr">→</span><a class="pstep" href="courses/04-presenting-numbers.html">4</a><span class="parr">→</span><a class="pstep" href="courses/05-negotiation-and-face.html">5</a><span class="parr">→</span><a class="pstep" href="courses/06-dining-and-capstone.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">from register to a full negotiation with its follow-ups</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">Where a page rests on a standard, a paper or a guide, it says which and how it was read; where something is common practice rather than a documented rule, it says that instead.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Every index and fit on the formality checker</td><td><strong>Really computed</strong> in your browser from a printed list of 43 markers; the weights and channel bands are constructed and printed in full</td></tr>
+      <tr><td>同比 (tóngbǐ, year on year) and 环比 (huánbǐ, period on period)</td><td><strong>Read at source</strong> from China's National Bureau of Statistics</td></tr>
+      <tr><td>此致 敬礼 (cǐzhì jìnglǐ, with respect)</td><td><strong>A widely observed convention</strong>; it is not part of GB/T 9704 or any standard found</td></tr>
+      <tr><td>Face in negotiation</td><td><strong>Graham and Lam, Harvard Business Review, 2003</strong>, taught as their argument; cultural generalisations are tendencies, not rules</td></tr>
+      <tr><td>BCT, the Business Chinese Test</td><td><strong>From the official CTI brochure</strong>: BCT (A), BCT (B) and BCT (oral)</td></tr>
+      <tr><td>Lumen Logistics, the drafts and the negotiation</td><td><strong>Invented</strong> for the running case</td></tr>
+    </table>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-business-chinese-advanced-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Neighbours on the shelf: <a href="https://phoebefu6.github.io/learn-business-chinese-basic-with-phoebe/">Business Chinese Basic ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-communication-with-phoebe/">Communication ↗</a></span>
+  </footer>
+
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  "title": "Business\nChinese Advanced",
+  "centerColor": "#16294D",
+  "sessions": [
+    {
+      "label": "Register: the same\nsentence, three ways",
+      "href": "courses/01-register.html",
+      "color": "#FBBF24",
+      "concepts": [
+        {
+          "label": "Three levers",
+          "href": "courses/01-register.html"
+        },
+        {
+          "label": "Written vs spoken",
+          "href": "courses/01-register.html"
+        },
+        {
+          "label": "Over-formal",
+          "href": "courses/01-register.html"
+        }
+      ]
+    },
+    {
+      "label": "Formal emails\nand WeChat",
+      "href": "courses/02-formal-emails-and-wechat.html",
+      "color": "#FBBF24",
+      "concepts": [
+        {
+          "label": "Formal email blocks",
+          "href": "courses/02-formal-emails-and-wechat.html"
+        },
+        {
+          "label": "Business WeChat",
+          "href": "courses/02-formal-emails-and-wechat.html"
+        },
+        {
+          "label": "Subject lines",
+          "href": "courses/02-formal-emails-and-wechat.html"
+        }
+      ]
+    },
+    {
+      "label": "The\nformality checker",
+      "href": "courses/03-the-formality-checker.html",
+      "color": "#F87171",
+      "concepts": [
+        {
+          "label": "Bands per channel",
+          "href": "courses/03-the-formality-checker.html"
+        },
+        {
+          "label": "Three swaps",
+          "href": "courses/03-the-formality-checker.html"
+        },
+        {
+          "label": "The ceiling",
+          "href": "courses/03-the-formality-checker.html"
+        }
+      ]
+    },
+    {
+      "label": "Presenting\nnumbers",
+      "href": "courses/04-presenting-numbers.html",
+      "color": "#FB923C",
+      "concepts": [
+        {
+          "label": "Year on year",
+          "href": "courses/04-presenting-numbers.html"
+        },
+        {
+          "label": "Period on period",
+          "href": "courses/04-presenting-numbers.html"
+        },
+        {
+          "label": "Say the comparison",
+          "href": "courses/04-presenting-numbers.html"
+        }
+      ]
+    },
+    {
+      "label": "Negotiation\nand face",
+      "href": "courses/05-negotiation-and-face.html",
+      "color": "#FB923C",
+      "concepts": [
+        {
+          "label": "Face",
+          "href": "courses/05-negotiation-and-face.html"
+        },
+        {
+          "label": "Indirect no",
+          "href": "courses/05-negotiation-and-face.html"
+        },
+        {
+          "label": "Traded concessions",
+          "href": "courses/05-negotiation-and-face.html"
+        }
+      ]
+    },
+    {
+      "label": "Business dining,\nand the capstone",
+      "href": "courses/06-dining-and-capstone.html",
+      "color": "#FB923C",
+      "concepts": [
+        {
+          "label": "At the table",
+          "href": "courses/06-dining-and-capstone.html"
+        },
+        {
+          "label": "Ritual refusal",
+          "href": "courses/06-dining-and-capstone.html"
+        },
+        {
+          "label": "The full negotiation",
+          "href": "courses/06-dining-and-capstone.html"
+        }
+      ]
+    }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
